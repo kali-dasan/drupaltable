@@ -34,11 +34,11 @@
  	// Collect table row values
  	foreach ($results as $row) {
    $rows[] = array(
-        // ID with hyperlink.
-        l($row->id, 'url', array('query' => array('qry' => $row->email), 'attributes' => array('target' => '_blank'))),
-        $row->name,
-        $row->dob,
-        $row->email, // $row->total can also be used here.
+      // ID with hyperlink.
+      l($row->id, 'url', array('query' => array('qry' => $row->email), 'attributes' => array('target' => '_blank'))),
+      $row->name,
+      $row->dob,
+      $row->email, // $row->total can also be used here.
     );
   }
   // Putting all together to form a table.
